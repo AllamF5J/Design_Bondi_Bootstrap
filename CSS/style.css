@@ -199,9 +199,12 @@
 
 /* ! End Our-Work */
 /* ! Start Stuff */
-.stuff .text {
-  width: 655px;
-  max-width: 99%;
+.stuff {
+  .text {
+    width: 640px;
+    max-width: 99%;
+  }
+
 }
 
 /* ! End Stuff */
