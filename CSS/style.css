@@ -1,13 +1,47 @@
+/* ! Start Component */
 :root {
   --dark-color: #19283f;
   --light-color: #33d1cc;
   --yellow-color: #ffc400;
+  --section-color: #eff7fa;
 }
 
 * {
   font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark-color)
+}
+
+/* ! End Component */
+/* ! Start Header */
+.main-title::after {
+  content: " ";
+  width: 150px;
+  height: 2px;
+  background-color: var(--light-color);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+
+.main-title {
+  h2 {
+    font-size: 36px;
+  }
+}
+
+/* ! End Header */
 /* ! Start Navbar */
 .navbar {
   background-color: var(--dark-color);
@@ -64,7 +98,7 @@
 /* ! Start Landing */
 .landing {
   background-color: var(--dark-color);
-  min-height: calc(80vh - 72px);
+  min-height: calc(75vh - 72px);
 
   h1 {
     font-size: 54px;
@@ -76,3 +110,131 @@
 }
 
 /* ! End Landing */
+/* ! Start Feature */
+.feature {
+  padding-bottom: 80px;
+
+  .feat {
+    padding: 0 28px;
+
+    .icon-holder {
+      height: 270px;
+
+      svg,
+      .number {
+        left: 50%;
+        transform: translateX(-50%);
+        -webkit-transform: translateX(-50%);
+        -moz-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+        -o-transform: translateX(-50%);
+      }
+
+      .number {
+        color: var(--section-color);
+        font-size: 18rem;
+        margin-bottom: -115px;
+      }
+
+      .icon {
+        color: var(--light-color);
+      }
+    }
+
+    h4 {
+      color: var(--yellow-color);
+      font-size: 26px;
+    }
+
+    p {
+      word-spacing: 2px;
+    }
+  }
+}
+
+/* ! End Feature */
+/* ! Start Our-Work */
+.our-work {
+  background-color: var(--section-color);
+  padding-bottom: 1000px;
+
+  ul.list-unstyled {
+    li {
+      margin: 0 10px;
+
+      button {
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+
+        @media(min-width: 768px) {
+          padding: 8px 22px;
+        }
+      }
+    }
+
+    @media (max-width: 767px) {
+      li {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .box {
+    img {
+      padding: 5px;
+    }
+  }
+
+  .box:hover {
+    cursor: crosshair;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+/* ! End Our-Work */
+/* ! Start Stuff */
+.stuff .text {
+  width: 655px;
+  max-width: 99%;
+}
+
+/* ! End Stuff */
+/* ! Start Team */
+.team {
+  background-color: var(--section-color);
+
+  .text {
+    width: 1056px;
+    max-width: 98%;
+  }
+
+  .box {
+    img {
+      width: 100%;
+    }
+
+    h4 {
+      background-color: var(--light-color);
+    }
+
+    blockquote {
+      height: 125px;
+      padding: 24px 34px;
+    }
+  }
+}
+
+/* ! End Team */
+/* ! Start Project */
+
+.project {
+  background-color: var(--dark-color);
+}
+
+/* ! End Project */
