@@ -238,3 +238,113 @@
 }
 
 /* ! End Project */
+/* ! Start Subscribe */
+.subscribe {
+  background-color: var(--yellow-color);
+
+  .text {
+    font-weight: 600;
+    font-size: 20px;
+  }
+
+  input[type="email"] {
+    border: none;
+    border-bottom: 1px solid white
+  }
+
+  input[type="email"]:focus {
+    outline: none;
+  }
+
+  input[type="email"]::placeholder {
+    color: white;
+  }
+
+  input.btn {
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+  }
+}
+
+/* ! End Subscribe */
+/* ! Start Footer */
+.footer {
+  background-color: var(--dark-color);
+
+  .info {
+    p {
+      font-size: 15px;
+      line-height: 2.7;
+      margin-bottom: 100px;
+    }
+
+    @media (max-width: 767px) {
+      p {
+        margin-bottom: 40px;
+      }
+    }
+  }
+
+  .links {
+    li {
+      margin: 14px 0;
+    }
+  }
+
+  .contact {
+    p {
+      font-size: 17px;
+      line-height: 2.4;
+      margin-bottom: -10px;
+    }
+  }
+
+  .copyright>span {
+    color: var(--light-color);
+  }
+
+  .copyright div span {
+    color: var(--yellow-color);
+  }
+
+  @media (max-width: 767px) {
+    .copyright {
+      margin-bottom: 40px;
+    }
+  }
+
+  .contact ul svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .facebook {
+    background-color: #1877f2;
+  }
+
+  .twitter {
+    background-color: #1da1f2;
+  }
+
+  .linkedin {
+    background-color: #0077b5;
+  }
+
+  .youtube {
+    background-color: #ff0000;
+  }
+
+  span::after {
+    content: "❤️";
+    display: none;
+  }
+
+  span[class="my-name"]:hover,
+  span[class="my-name"]:hover::after {
+    color: red;
+    font-size: 20px;
+    display: unset;
+  }
+}
+
+/* ! End Footer */
